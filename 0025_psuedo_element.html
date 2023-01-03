@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudi-element</title>
+    <style>
+        /* 
+            akan berefek pada line pertama
+        */
+        p::first-line {
+            color: blue;
+        }
+
+        p::first-letter {
+            color: red;
+        }
+
+        h4::before{
+            content: url(background.png);
+        }
+
+        h5::after{
+            content: url(background.png);
+        }
+
+        ::marker {
+            color: yellow;
+            font-size: 23px;
+        }
+
+        ::selection {
+            color: yellow;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laborum non ratione, deleniti, aperiam iste nulla illo facilis placeat hic repellendus quis quae possimus nesciunt maiores aut corrupti itaque laboriosam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, vero dolore, eius voluptatem nobis possimus ad modi recusandae adipisci corporis cumque doloribus totam ea. Architecto, dolores. Ducimus labore veniam nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab inventore explicabo illum? Expedita necessitatibus odit esse iure quasi suscipit magnam nostrum provident numquam cumque quae id, officia ipsam nesciunt odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque totam eaque placeat dolorem beatae. Laudantium officia pariatur earum! Amet hic recusandae eveniet nulla dolor modi eius placeat obcaecati neque maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sed rem, laboriosam quos a ipsam necessitatibus fugit perferendis rerum amet. Dolor, vitae pariatur nisi aliquam officia esse est nesciunt asperiores.</p>
+    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, sapiente! Dolor, aliquid eligendi? Beatae eius excepturi, dolor commodi ex voluptatem soluta, harum nobis dignissimos alias assumenda tempora? Molestiae, optio beatae!</h4>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem velit sapiente placeat officiis fuga. Saepe, voluptas distinctio rem maxime, soluta fuga, hic est dolorem incidunt quasi quidem! Beatae, alias earum?</h5>
+    <ul>
+        <li>Tea</li>
+        <li>Milk</li>
+        <li>Coffe</li>
+    </ul>
+</body>
+</html>
