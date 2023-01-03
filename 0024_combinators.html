@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        /*
+            akan berefek sebuah p yang dibungkus oleh div
+        */
+        div > p { 
+            background-color: red;
+        }
+
+        /* 
+            akan berefek pada p yang dideklar setelah div dan p selanjutnya tidak berefek
+        */
+        div + p {
+            background-color: yellow;
+        }
+
+        /* 
+            akan berefek pada h1 yang tidak dibungkus oleh div
+        */
+        div ~ h1 {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>Div</div>
+    <div>
+        <p>Div p</p>
+        <p>
+            <div>div p div</div>
+        </p>
+        <div>
+            <p>div div p</p>
+        </div>
+    </div>
+    <p>p</p>
+    <p>p</p>
+    <p>================================</p>
+    <h1>h1</h1>
+    <div>
+        <h1>div h1</h1>
+    </div>
+    <div>div</div>
+    <h1>h1</h1>
+</body>
+</html>
