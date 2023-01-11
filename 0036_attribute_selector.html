@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        a[target] {
+            background-color: yellow;
+        }
+        a[target="_blank"] {
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://awan.es" target="_parent" rel="noopener noreferrer">Awan</a>
+    <a href="https://awan.es" target="_self" rel="noopener noreferrer">Awan</a>
+    <a href="https://awan.es" target="_tops" rel="noopener noreferrer">Awan</a>
+    <a href="https://awan.es" target="_blank" rel="noopener noreferrer">Awan</a>
+</body>
+</html>
